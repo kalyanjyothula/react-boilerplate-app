@@ -46,12 +46,6 @@ module.exports = {
     'jsx-a11y/heading-has-content': 0,
     'jsx-a11y/label-has-associated-control': [
       2,
-      {
-        // NOTE: If this error triggers, either disable it or add
-        // your custom components, labels and attributes via these options
-        // See https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/label-has-associated-control.md
-        controlComponents: ['Input'],
-      },
     ],
     'jsx-a11y/label-has-for': 0,
     'jsx-a11y/mouse-events-have-key-events': 2,
@@ -78,6 +72,7 @@ module.exports = {
     'redux-saga/no-yield-in-race': 2,
     'redux-saga/yield-effects': 2,
     'require-yield': 0,
+    "react/prefer-stateless-function": [2, { "ignorePureComponents": true }],
   },
   settings: {
     'import/resolver': {
